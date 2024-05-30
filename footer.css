@@ -1,0 +1,120 @@
+footer .footer-container{
+    background-color:black;
+}
+
+.foooter-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background-color: #f44336;
+    bottom: -10px;
+}
+
+.footer-col ul li{
+    padding: 10px 0;
+}
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    background-color: #f44336;
+    border: none;
+    color: white;
+}
+.col p{
+    color: white;
+}
+.foooter-row hr{
+    opacity: 0.7;
+}
+
+.foooter-row .socialIcons i{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin-right:120px;
+    transition: 0.5s;
+ 
+}
+
+.foooter-row .socialIcons i:hover{
+    color: #f44336;
+}
+
+
+
+
+/* Default styles for all screens */
+footer .footer-container {
+    background-color: black;
+  }
+  
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .footer-row {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      padding: 20px; /* Adjust padding for smaller viewports */
+    }
+  
+    .footer-col {
+      margin-bottom: 20px; /* Add space between footer columns */
+    }
+  
+    .footer-col h4::before { /* Adjust underline width for smaller fonts */
+      width: 80px;
+    }
+  
+    .footer-col ul li a { /* Increase font size for better readability */
+      font-size: 14px;
+    }
+  
+    .footer-col input { /* Adjust width for narrower screens */
+      width: 100%;
+    }
+  
+    .footer-col .socialIcons i { /* Reduce spacing between social icons */
+      margin-right: 50px;
+    }
+  }
+  
